@@ -1,0 +1,25 @@
+<html>
+<body>
+	<h1>File Upload with Jersey</h1>
+ 
+	<form action="rest/file/upload" method="post" enctype="multipart/form-data">
+ 
+	   <p>
+		Select a file : <input type="file" name="file1" size="45" />
+	   </p>
+ 		<p> Select destination directory: <input type="file" name="directory" id="flup" onchange="getfolder(event)" webkitdirectory directory multiple/>
+	   <input type="submit" value="Upload It" />
+	</form>
+ 
+</body>
+</html>
+
+<script type="text/javascript">
+function getfolder(e) {
+    var files = e.target.files;
+    var path = files[0].webkitRelativePath;
+    alert(path);
+    var Folder = path.split("/");
+    alert(Folder[0]);
+}
+</script>
