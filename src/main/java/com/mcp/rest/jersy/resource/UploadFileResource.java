@@ -16,7 +16,7 @@ import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 
 @Path("/file")
-public class UploadFileService {
+public class UploadFileResource {
 
 	@POST
 	@Path("/upload")

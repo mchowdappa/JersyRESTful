@@ -37,6 +37,13 @@
 			<version>1.8</version>
 		</dependency>
 
+<!-- This is for POJOMappingFeature  -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.8</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
